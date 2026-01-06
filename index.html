@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Алиночка Принцесса | Alino4kaPrincess - девушка Домера</title>
+    <meta name="description" content="Алиночка Принцесса (Алина) - девушка Домера, хейтерша Лены, будущая жена Сергея Камышникова. Вся история отношений и подготовка к свадьбе.">
+    <meta name="keywords" content="Алиночка Принцесса, Alino4kaPrincess, Алина, Домер, Сергей Камышников, Minecraft, свадьба, отношения">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --pink-1: #ff69b4;      /* Hot pink */
+            --pink-2: #ff1493;      /* Deep pink */
+            --pink-3: #ffc0cb;      /* Light pink */
+            --pink-4: #ffb6c1;      /* Light pink 2 */
+            --pink-5: #db7093;      /* Pale violet red */
+            --pink-light: #ffe4e1;  /* Misty rose */
+            --pink-gold: #ffd700;   /* Gold accent */
+            --text: #4a4a4a;
+            --text-light: #888;
+            --background: #fffaf5;  /* Floral white */
+            --surface: #fff0f5;     /* Lavender blush */
+            --border: #ffccd5;      /* Pink border */
+            --heart: #ff3366;       /* Heart red */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: linear-gradient(135deg, #fffaf5 0%, #ffeef8 100%);
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" opacity="0.03"><path fill="%23ff69b4" d="M50,10 Q70,30 50,50 T30,70 Q10,50 30,30 T50,10 Z"/></svg>');
+            background-size: 200px;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Навигация */
+        .main-header {
+            background: linear-gradient(135deg, var(--pink-1) 0%, var(--pink-2) 100%);
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(255, 105, 180, 0.2);
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 0;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--pink-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--pink-2);
+            border: 2px solid white;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); box-shadow: 0 0 20px var(--pink-gold); }
+        }
+
+        .brand-name {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Герой секция */
+        .hero {
+            background: linear-gradient(135deg, var(--pink-1) 0%, var(--pink-2) 100%);
+            color: white;
+            padding: 5rem 0 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '👑';
+            position: absolute;
+            font-size: 20rem;
+            opacity: 0.05;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        .hero-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Секции */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+        }
+
+        .section-header h2 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: var(--pink-2);
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        .section-header h2::after {
+            content: '💖';
+            position: absolute;
+            right: -40px;
+            top: -10px;
+            font-size: 2rem;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* Карточка отношений */
+        .love-story {
+            background: white;
+            border-radius: 25px;
+            padding: 4rem;
+            box-shadow: 0 20px 50px rgba(255, 105, 180, 0.1);
+            border: 2px solid var(--border);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .love-story::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, var(--pink-1), var(--pink-gold), var(--pink-2));
+        }
+
+        .couple-header {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .person-card {
+            text-align: center;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .person-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, var(--pink-3), var(--pink-1));
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(255, 105, 180, 0.2);
+        }
+
+        .heart-connector {
+            font-size: 3rem;
+            color: var(--heart);
+            animation: heartbeat 1.5s infinite;
+        }
+
+        /* Факты */
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .fact-card {
+            background: var(--surface);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .fact-card:hover {
+            border-color: var(--pink-1);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 105, 180, 0.15);
+        }
+
+        .fact-icon {
+            font-size: 3rem;
+            color: var(--pink-2);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Таплинк секция */
+        .taplink-section {
+            background: linear-gradient(135deg, var(--pink-1) 0%, var(--pink-2) 100%);
+            color: white;
+            padding: 4rem;
+            border-radius: 25px;
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .taplink-section::before {
+            content: '💕';
+            position: absolute;
+            font-size: 15rem;
+            opacity: 0.1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .taplink-button {
+            display: inline-block;
+            background: white;
+            color: var(--pink-2);
+            text-decoration: none;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+            border: 3px solid transparent;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Об авторе каталога */
+        .author-section {
+            background: linear-gradient(135deg, var(--surface) 0%, #ffeef8 100%);
+            border-radius: 25px;
+            padding: 4rem;
+            margin: 3rem 0;
+            border: 2px solid var(--border);
+            text-align: center;
+        }
+
+        .author-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .author-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        .author-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--pink-2);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 1rem;
+        }
+
+        /* Теги */
+        .tags-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .tag {
+            background: var(--pink-light);
+            color: var(--pink-2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            border: 2px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .tag:hover {
+            background: var(--pink-1);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero-title {
+                font-size: 2.8rem;
+            }
+            
+            .section {
+                padding: 3rem 0;
+            }
+            
+            .love-story {
+                padding: 2rem 1.5rem;
+            }
+            
+            .couple-header {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .heart-connector {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+            
+            .taplink-section {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <div class="logo-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div>
+                        <div class="brand-name">Алиночка Принцесса</div>
+                        <div style="font-size: 0.9rem; opacity: 0.9;">Официальный каталог</div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Алиночка Принцесса</h1>
+            <p class="hero-subtitle">Alino4kaPrincess - девушка Домера, будущая жена Сергея Камышникова</p>
+            
+            <div class="tags-container">
+                <span class="tag">алиночка</span>
+                <span class="tag">домер</span>
+                <span class="tag">отношения</span>
+                <span class="tag">майнкрафт</span>
+                <span class="tag">любовь</span>
+                <span class="tag">вопрос</span>
+                <span class="tag">свадьба</span>
+                <span class="tag">хейтерша</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="section">
+            <div class="love-story">
+                <div class="couple-header">
+                    <div class="person-card">
+                        <div class="person-avatar">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 style="color: var(--pink-2); font-size: 1.8rem; margin-bottom: 0.5rem;">Алина</h3>
+                        <p style="color: var(--text-light);">Alino4kaPrincess</p>
+                        <p style="margin-top: 1rem; color: var(--pink-2);">
+                            <i class="fas fa-heart" style="color: var(--heart);"></i> Хейтерша Лены
+                        </p>
+                    </div>
+                    
+                    <div class="heart-connector">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    
+                    <div class="person-card">
+                        <div class="person-avatar">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3 style="color: var(--pink-2); font-size: 1.8rem; margin-bottom: 0.5rem;">Домер</h3>
+                        <p style="color: var(--text-light);">Сергей Камышников</p>
+                        <p style="margin-top: 1rem; color: var(--pink-2);">
+                            <i class="fas fa-heart" style="color: var(--heart);"></i> Minecraft-блогер
+                        </p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <h3 style="color: var(--pink-2); font-size: 1.8rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-heart" style="color: var(--heart);"></i> История их отношений
+                    </h3>
+                    
+                    <div style="max-width: 800px; margin: 0 auto;">
+                        <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            <strong>Алина, также известная как Аlino4kaPrincess</strong> - главный герой каналов <em>Domer Grief</em> и <em>Огород Домера</em> (после самого Домера, конечно).
+                        </p>
+                        
+                        <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            Она является <strong>хейтершой Лены</strong> - бывшей девушки Домера. Также, в скором времени у Сергея (Домера) и Алины <strong>будет свадьба</strong>. Дата пока неизвестна.
+                        </p>
+                        
+                        <p style="color: var(--text); font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            Сейчас же, с недавнего времени, она живет с <strong>Сергеем Камышниковым (Домером)</strong> и является его девушкой. Полная история их отношений и развития событий доступна по ссылкам ниже.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Живут вместе</h4>
+                        <p>Алина сейчас живёт с Сергеем (Домером) в одном доме</p>
+                    </div>
+                    
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h4>Скоро свадьба</h4>
+                        <p>Планируется свадьба, точная дата пока неизвестна</p>
+                    </div>
+                    
+                    <div class="fact-card">
+                        <div class="fact-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h4>YouTube каналы</h4>
+                        <p>Участвует в каналах Domer Grief и Огород Домера</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="taplink-section">
+            <h2 style="font-family: 'Dancing Script', cursive; font-size: 3rem; margin-bottom: 1rem; position: relative; z-index: 1;">
+                Вся правда об Алиночке
+            </h2>
+            <p style="font-size: 1.2rem; opacity: 0.95; max-width: 600px; margin: 0 auto; position: relative; z-index: 1;">
+                Полная история отношений и развития событий можно найти по ссылке на официальный ресурс
+            </p>
+            
+            <div style="background: rgba(255, 255, 255, 0.2); padding: 1.5rem; border-radius: 15px; margin: 2rem auto; max-width: 500px; position: relative; z-index: 1;">
+                <p style="font-family: 'Roboto Mono', monospace; font-size: 1.3rem; word-break: break-all;">
+                    https://taplink.cc/alino4kaprincssss
+                </p>
+            </div>
+            
+            <a href="https://taplink.cc/alino4kaprincssss" target="_blank" class="taplink-button">
+                <i class="fas fa-external-link-alt"></i> Официальный Таплинк Алины
+            </a>
+        </section>
+
+        <section class="author-section">
+            <h2 class="section-header" style="margin-bottom: 2rem;">
+                <h2>Об авторе этого каталога</h2>
+            </h2>
+            
+            <p style="color: var(--text); max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">
+                Этот каталог создан с любовью к деталям и вниманием к истории отношений Алины и Домера. 
+                Вся информация собрана из открытых источников.
+            </p>
+            
+            <div class="author-grid">
+                <div class="author-card">
+                    <div class="author-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Автор каталога</h3>
+                    <p>Алёна Рыжова</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">
+                        Исследователь проектов
+                    </p>
+                </div>
+                
+                <div class="author-card">
+                    <div class="author-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Дата рождения</h3>
+                    <p>21.06.2010</p>
+                    <p style="color: var(--text-light); font-size: 0.9rem; margin-top: 0.5rem;">
+                        Летнее солнцестояние!
+                    </p>
+                </div>
+                
+                <div class="author-card">
+                    <div class="author-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Мой сайт</h3>
+                    <p>Alёnka</p>
+                    <a href="https://akkumulator950-bit.github.io/" target="_blank" style="display: inline-block; margin-top: 0.5rem; color: var(--pink-2); text-decoration: none; font-weight: 600;">
+                        <i class="fas fa-external-link-alt"></i> Перейти
+                    </a>
+                </div>
+                
+                <div class="author-card">
+                    <div class="author-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Другие каталоги</h3>
+                    <p>4 сайта создано</p>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://akkumulator950-bit.github.io/sibilevec-fan.github.io/" target="_blank" style="color: var(--pink-2); text-decoration: none; font-size: 0.9rem; display: block;">
+                            • Сибилевец
+                        </a>
+                        <a href="https://akkumulator950-bit.github.io/timoshkamsc-fan.github.io/" target="_blank" style="color: var(--pink-2); text-decoration: none; font-size: 0.9rem; display: block;">
+                            • Тимошка
+                        </a>
+                        <a href="https://akkumulator950-bit.github.io/" target="_blank" style="color: var(--pink-2); text-decoration: none; font-size: 0.9rem; display: block;">
+                            • Alёnka
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border);">
+                <p style="color: var(--text-light); font-style: italic; max-width: 800px; margin: 0 auto;">
+                    <i class="fas fa-heart" style="color: var(--heart);"></i> 
+                    "Любовь — это когда двое становятся одной историей, даже в мире пикселей и блоков"
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: linear-gradient(135deg, var(--pink-1) 0%, var(--pink-2) 100%); color: white; padding: 3rem 0; margin-top: 3rem;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <div style="width: 60px; height: 60px; background: rgba(255, 255, 255, 0.2); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.8rem; margin-bottom: 1rem;">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; margin-bottom: 0.5rem;">
+                    Алиночка Принцесса
+                </h3>
+                <p style="opacity: 0.9;">Каталог создан с любовью к деталям</p>
+            </div>
+            
+            <div style="text-align: center; opacity: 0.8; font-size: 0.9rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                <p>© 2025 Каталог Алиночки Принцессы. Создано Алёной Рыжовой.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem;">
+                    <i class="fas fa-info-circle"></i> Все права на оригинальный контент принадлежат Алине и Домеру.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('footer p');
+            if(yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2025', currentYear);
+            }
+            
+            const hearts = document.querySelectorAll('.fa-heart');
+            hearts.forEach(heart => {
+                setInterval(() => {
+                    if(Math.random() > 0.7) {
+                        heart.style.color = '#ff3366';
+                        setTimeout(() => {
+                            heart.style.color = '';
+                        }, 500);
+                    }
+                }, 2000);
+            });
+            
+            document.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
